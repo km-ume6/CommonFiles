@@ -77,9 +77,9 @@
 3.  **共通部品をサブモジュールとして追加:**
     以下のコマンドで共通部品リポジトリをサブモジュールとして追加します。
     ```bash
-    git submodule add c:/source/common common_parts
+    git submodule add https://github.com/km-ume6/CommonFiles common_parts
     ```
-    * `c:/source/common`: ステップ1で作成した共通部品リポジトリのパスです。Windowsのパスはスラッシュ `/` で区切るのがGitでは一般的です。
+    * `"C:\Users\ume6\OneDrive - ume6\Code\CommonFiles"`: ステップ1で作成した共通部品リポジトリのパスです。Windowsのパスはスラッシュ `/` で区切るのがGitでは一般的です。
     * `common_parts`: メインプロジェクトの `c:\source\myapp` の中に作成されるディレクトリ名です。このディレクトリの中に、共通部品のファイルがクローンされ、メインプロジェクトのGitから参照可能になります。
 
 4.  **サブモジュールの追加をコミット:**

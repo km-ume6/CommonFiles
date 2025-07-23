@@ -9,11 +9,11 @@ namespace CommonFiles
         {
             if (dataTable.Rows.Count > 0)
             {
-                // —ñ–¼‚ğo—Í
+                // åˆ—åã‚’å‡ºåŠ›
                 string columnNames = string.Join(", ", dataTable.Columns.Cast<DataColumn>().Select(col => col.ColumnName));
                 Debug.WriteLine(columnNames);
 
-                // Šes‚Ì’l‚ğo—Í
+                // å„è¡Œã®å€¤ã‚’å‡ºåŠ›
                 foreach (DataRow row in dataTable.Rows)
                 {
                     string rowValues = string.Join(", ", row.ItemArray.Select(item => item?.ToString() ?? ""));
